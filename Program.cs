@@ -204,15 +204,31 @@ namespace Assignment02
             #endregion
 
             #region Question 16
-           // 16 - Using the same books array, loop through it and print each title, but stop completely(break) once
-           // you reach "Refactoring"
+            // 16 - Using the same books array, loop through it and print each title, but stop completely(break) once
+            // you reach "Refactoring"
+
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string book in books)
+            //{
+            //    if (book == "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+            #region Question17
+           // 17 - Using the same books array, print every title except "The Pragmatic Programmer"(skip it with
+            //continue, don't stop the loop).
+
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             foreach (string book in books)
             {
-                if (book == "Refactoring")
+                if (book == "The Pragmatic Programmer")
                 {
-                    break;
+                    continue;
                 }
                 Console.WriteLine(book);
             }
