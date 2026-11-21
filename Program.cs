@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 
@@ -20,7 +21,7 @@ namespace Assignment02
             #endregion
 
             #region Question 2 
-           // 2 - Declare two separate string variables, both set to the literal "Clean Code".Use ReferenceEquals()
+            // 2 - Declare two separate string variables, both set to the literal "Clean Code".Use ReferenceEquals()
             //to check if they point to the same object in memory.
 
 
@@ -36,14 +37,29 @@ namespace Assignment02
             //object.Print the final result.
 
 
+            //StringBuilder sb = new StringBuilder();
+
+            //sb.Append("Book List");
+
+            //sb.Append(" - Updated");
+
+            //Console.WriteLine(sb.ToString());
+
+            #endregion
+
+            #region Question 4 
+            //4 - Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Book List");
 
             sb.Append(" - Updated");
 
-            Console.WriteLine(sb.ToString());
+            sb.Replace("Book List", "Library");
 
+            Console.WriteLine(sb.ToString());
             #endregion
 
         }
