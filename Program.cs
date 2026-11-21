@@ -76,12 +76,22 @@ namespace Assignment02
             #region Question 6
             //6 - Build the same sentence as above, but using string interpolation ($"...").
 
+            //string title = "Clean Code";
+            //int pages = 464;
+
+            //string sentence = $"Book: {title}, Pages: {pages}";
+            //Console.WriteLine(sentence);
+
+            #endregion
+
+            #region Question 7
+            //7 - Build the same sentence again, but using string.Format().
+
             string title = "Clean Code";
             int pages = 464;
 
-            string sentence = $"Book: {title}, Pages: {pages}";
+            string sentence = string.Format("Book: {0}, Pages: {1}", title, pages);
             Console.WriteLine(sentence);
-
             #endregion
 
         }
