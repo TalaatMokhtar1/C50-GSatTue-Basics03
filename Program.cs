@@ -2,7 +2,7 @@
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Timers;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 
 namespace Assignment02
