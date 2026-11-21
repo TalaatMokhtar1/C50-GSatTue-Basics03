@@ -1,4 +1,6 @@
 ﻿using System.Drawing;
+using System.Text;
+
 
 namespace Assignment02
 {
@@ -22,10 +24,25 @@ namespace Assignment02
             //to check if they point to the same object in memory.
 
 
-            string t1 = "Clean Code";
-            string t2 = "Clean Code";
+            //string t1 = "Clean Code";
+            //string t2 = "Clean Code";
 
-            Console.WriteLine(object.ReferenceEquals(t1, t2));
+            //Console.WriteLine(object.ReferenceEquals(t1, t2));
+
+            #endregion
+
+            #region Question 3 
+            //3 - Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            //object.Print the final result.
+
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Book List");
+
+            sb.Append(" - Updated");
+
+            Console.WriteLine(sb.ToString());
 
             #endregion
 
